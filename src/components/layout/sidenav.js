@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import "antd/dist/antd.css";
 //just demo
 import Alert from "./alert";
-
+// import Background from "../Modal/combined/backdrop";
 import "./sidenav.css";
 import { Layout, Menu, Icon } from "antd";
 const { Sider } = Layout;

@@ -1,0 +1,23 @@
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+}
+.modal-box {
+  background-color: #6b1500e1;
+
+  border-radius: 3rem;
+  border: 5px solid rgba(71, 5, 5, 0.932);
+  padding: 3rem 2rem;
+  transition: transform 0.8s ease-out;
+}
+
+.closed {
+  transform: scale(0.1);
+}
+
+.opened {
+  transform: scale(1);
+}
