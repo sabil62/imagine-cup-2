@@ -1,5 +1,5 @@
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { Link, withRouter } from "react-router-dom";
+import { MapContainer, TileLayer, Marker, Tooltip } from "react-leaflet";
+import { withRouter } from "react-router-dom";
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
@@ -41,6 +41,7 @@ class HomeMap extends Component {
             {/* <Popup>
               A pretty CSS3 popup. <br /> Easily customizable.
             </Popup> */}
+            <Tooltip>Kathmandu University</Tooltip>
           </Marker>
         </MapContainer>
       </div>
