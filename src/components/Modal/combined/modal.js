@@ -5,6 +5,9 @@ const modal = (props) => {
   return (
     <div className="modal">
       <div className="modal-box opened">
+        <div className="cross" style={{ cursor: "pointer" }}>
+          &#10006;
+        </div>
         <h1 style={{ textAlign: "center", color: "wheat", opacity: "0.95" }}>
           Heatwave Warning
         </h1>

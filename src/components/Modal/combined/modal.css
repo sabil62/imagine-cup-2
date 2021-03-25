@@ -21,3 +21,9 @@
 .opened {
   transform: scale(1);
 }
+
+.cross {
+  display: flex;
+
+  flex-direction: row-reverse;
+}
