@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import "antd/dist/antd.css";
-//just demo
-import Alert from "./alert";
 // import Background from "../Modal/combined/backdrop";
 import "./sidenav.css";
 import { Layout, Menu, Icon } from "antd";
@@ -22,9 +20,6 @@ class Sidenav extends React.Component {
         theme={"light"}
         className="sider"
       >
-        <Alert />
-        {/* <span> lion{this.props.change}</span>
-        <h4>{this.props.another}</h4> */}
         {this.props.change === 5 ? (
           <Menu
             defaultSelectedKeys={["1"]}

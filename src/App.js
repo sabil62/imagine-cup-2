@@ -24,28 +24,53 @@ const store = createStore(
 const audioTune = new Audio("https://awan.com.np/sounds.mp3");
 
 class App extends React.Component {
+  state = {
+    delay: true,
+  };
   componentDidMount() {
-    audioTune.load();
-    audioTune.play();
+    // audioTune.load();
+    // // audioTune.play();
     if (this.props.showDisplay === false) {
       audioTune.pause();
     }
+    setTimeout(() => this.onShow(), 4800);
+    setTimeout(() => {
+      audioTune.load();
+    }, 4800);
+    setTimeout(() => {
+      audioTune.play();
+    }, 4800);
   }
+
+  componentDidUpdate() {}
   state = {
     show: true,
   };
+  // onAudioLoad() {
+  //   audioTune.load();
+  // }
+  // onAudioPlay() {
+  //   audioTune.play();
+  // }
   onOff = () => {
     this.setState({ show: false });
+  };
+  onShow = () => {
+    this.setState({ delay: true });
   };
   onSoundOff = () => {
     audioTune.pause();
   };
+
   render() {
     return (
       <Provider store={store}>
-        <div onClick={() => this.onSoundOff()}>
-          <Alert showDisplay={this.state.show} onOff={() => this.onOff()} />
-        </div>
+        {this.state.delay ? (
+          <div onClick={() => this.onSoundOff()}>
+            <Alert showDisplay={this.state.show} onOff={() => this.onOff()} />
+          </div>
+        ) : null}
+
         <Router>
           <div>
             <Layout>
