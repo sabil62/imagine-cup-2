@@ -9,10 +9,10 @@ const modal = (props) => {
           &#10006;
         </div>
         <h1 style={{ textAlign: "center", color: "wheat", opacity: "0.95" }}>
-          Heatwave Warning
+          Fire Alert
         </h1>
         <h3 style={{ color: "wheat", opacity: "0.8" }}>
-          Please stay inside your house or a safe zone
+          Device id 038 at 27.6253° N, 85.5561° E
         </h3>
       </div>
     </div>

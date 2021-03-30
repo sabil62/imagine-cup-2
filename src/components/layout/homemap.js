@@ -43,6 +43,54 @@ class HomeMap extends Component {
             </Popup> */}
             <Tooltip>Kathmandu University</Tooltip>
           </Marker>
+          {/* second marker */}
+          <Marker
+            position={[27.6168, 85.548]}
+            eventHandlers={{
+              click: (e) => {
+                this.props.history.push("/home");
+                this.props.onChange();
+              },
+            }}
+          >
+            <Tooltip>Dhulikhel Hospital </Tooltip>
+          </Marker>
+          {/* third marker */}
+          <Marker
+            position={[27.6268, 85.538]} //27.6195, 85.5386
+            eventHandlers={{
+              click: (e) => {
+                this.props.history.push("/home");
+                this.props.onChange();
+              },
+            }}
+          >
+            <Tooltip>28 kilo </Tooltip>
+          </Marker>
+          {/* fourth marker */}
+          <Marker
+            position={[27.6145, 85.518]} //27.6195, 85.5386
+            eventHandlers={{
+              click: (e) => {
+                this.props.history.push("/home");
+                this.props.onChange();
+              },
+            }}
+          >
+            <Tooltip>Panauti Forest </Tooltip>
+          </Marker>
+          {/* Fifth */}
+          <Marker
+            position={[27.6128, 85.559]}
+            eventHandlers={{
+              click: (e) => {
+                this.props.history.push("/home");
+                this.props.onChange();
+              },
+            }}
+          >
+            <Tooltip>Dhulikhel Forest </Tooltip>
+          </Marker>
         </MapContainer>
       </div>
     );
